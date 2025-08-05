@@ -13,4 +13,13 @@ df['Valor'] = pd.to_numeric(df['Valor'])
 # Ventas por plataforma
 ventas_por_plataforma = df.groupby('Plataforma')['Valor'].sum()
 print(ventas_por_plataforma)
+
+# Ventas por género
+ventas_por_genero = df.groupby('Genero')['Valor'].sum()
+print(ventas_por_genero)
+
+# Ventas por año
+ventas_por_año = df.groupby('Año')['Valor'].sum()
+print(ventas_por_año)
+
 # %%

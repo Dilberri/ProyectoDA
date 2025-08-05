@@ -21,8 +21,4 @@ print(ventas_por_genero)
 ventas_por_anio = df.groupby('Año')['Valor'].sum()
 print(ventas_por_anio)
 
-# Ventas por año
-ventas_por_año = df.groupby('Año')['Valor'].sum()
-print(ventas_por_año)
-
 # %%
